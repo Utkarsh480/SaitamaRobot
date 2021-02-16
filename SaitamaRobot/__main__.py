@@ -20,11 +20,11 @@ from Gbanlogsofsubaru import to_load
 
 HELP = {}
 IMPORTED = {}
-FAILED_TO_LOAD = (WaterPillar_bot)
+FAILED_TO_LOAD = (Subaru_Akehoshi_bot)
 
 for load in to_load:
     try:
-        imported = importlib.import_module(WaterPillar_bot"" + load)
+        imported = importlib.import_module(Subaru_Akehoshi_bot"" + load)
         if not hasattr(imported, "__plugin_name__"):
             imported.__plugin_name__ = imported.__name__
 
